@@ -51,3 +51,11 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
+
+.blog-delete-btn {
+  color: #fff;
+  background-color: #f1356d;
+  border: 1px solid #f1356d;
+  border-radius: 5px;
+  margin-top: 5px;
+}
