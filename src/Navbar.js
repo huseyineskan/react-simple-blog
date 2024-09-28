@@ -1,11 +1,13 @@
 // sfc + TAB = Statles Functionlaty Components
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
     return ( 
         <nav className="navbar">
-            <h1>React Blog</h1>
+            <h1><Link to="/">React Blog</Link></h1>
             <div className="links">
-                <a href="/">Home</a>
-                <a href="/create">New Blog</a>
+                <Link to="/">Home</Link>
+                <Link to="/create">New Blog</Link>
             </div>
         </nav>    
     );
