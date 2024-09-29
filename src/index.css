@@ -79,3 +79,7 @@
   border-radius: 5px;
   margin-top: 5px;
 }
+
+.blog-preview a {
+  text-decoration: none;
+}
