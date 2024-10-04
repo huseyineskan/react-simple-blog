@@ -5,10 +5,17 @@ const Create = () => {
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('hsyn');
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const blog = { title, body, author }
+
+        console.log(blog)
+    }
+
     return ( 
         <div className="create">
             <h2>Add a New Blog</h2>
-            <form>
+            <form onSubmit={ handleSubmit }>
                 <label htmlFor="title">Blog title:</label>
                 <input 
                     type="text" 
@@ -32,15 +39,12 @@ const Create = () => {
                     value={author}
                     onChange={(e) => setAuthor(e.target.value)}
                 >
-                    <option value="baba">Huseyin</option>
-                    <option value="anne">Gözde</option>
-                    <option value="cocuk">Mirza</option>
+                    <option value="father">Huseyin</option>
+                    <option value="mother">Gözde</option>
+                    <option value="child">Mirza</option>
                 </select>
 
                 <button>Add blog</button>
-                <p>{ title }</p>
-                <p>{ body }</p>
-                <p>{ author }</p>
             </form>
         </div>
      );
