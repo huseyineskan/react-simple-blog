@@ -157,3 +157,12 @@
   font-size: 14px;
   margin-top: 50px;
 }
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #dadada;
+  padding-bottom: 5px;
+}
