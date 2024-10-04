@@ -13,16 +13,10 @@
       "id": "2"
     },
     {
-      "id": "74f0",
-      "title": "Test",
-      "body": "New body",
+      "id": "5f9e",
+      "title": "Hello React",
+      "body": "This is about react.",
       "author": "hsyn"
-    },
-    {
-      "id": "13a5",
-      "title": "Hello JS",
-      "body": "JS is perfect!",
-      "author": "mother"
     }
   ]
 }
