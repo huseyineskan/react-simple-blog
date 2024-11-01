@@ -1,4 +1,5 @@
 import BlogList from "./BlogList";
+import Slider from "./Slider";
 import useFetch from "./useFetch";
 
 const Home = () => {
@@ -10,9 +11,10 @@ const Home = () => {
 
   return (
     <div className="home">
+      {blogs && <Slider blogs={blogs} />}
       {error && <div>{error}</div>}
       {isPending && <div>Loading...</div>}
-      {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
+      {blogs && <BlogList blogs={blogs} title="All Blogs" />}
     </div>
   );
 };
