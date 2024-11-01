@@ -11,7 +11,7 @@ const BlogList = ({ title, blogs }) => {
               <img src={blog.img || require("./img/blog-default.jpg")} alt="" />
             </div>
             <div className="blog-list-text-section">
-              <h2>{blog.title}</h2>
+              <h3>{blog.title}</h3>
               <p className="blog-list-written-by">Written by {blog.author}</p>
               <p className="blog-list-text">
                 {blog.body.length > 100
